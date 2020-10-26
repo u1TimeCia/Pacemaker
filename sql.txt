@@ -1,0 +1,39 @@
+CREATE DATABASE pacemaker;
+USE pacemaker;
+SELECT COUNT(*) FROM p_user;
+CREATE TABLE p_user(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	username VARCHAR(20) NOT NULL UNIQUE,
+	`password` VARCHAR(20) NOT NULL
+);
+SELECT * FROM p_user;
+USE pacemaker;
+DROP TABLE p_user;
+INSERT INTO p_user(id,username,PASSWORD) VALUES(NULL,'admin','admin');
+INSERT INTO p_user(id,username,PASSWORD) VALUES(NULL,'qih12','qhr');
+INSERT INTO p_user(id,username,PASSWORD) VALUES(NULL,'lix292','lxc');
+INSERT INTO p_user(id,username,PASSWORD) VALUES(NULL,'juw3','jwt');
+INSERT INTO p_user(id,username,PASSWORD) VALUES(NULL,'chenz231','czk');
+INSERT INTO p_user(id,username,PASSWORD) VALUES(NULL,'gxy','gxy');
+INSERT INTO p_user(id,username,PASSWORD) VALUES(NULL,'hyx','hyx');
+INSERT INTO p_user(id,username,PASSWORD) VALUES(NULL,'ljh','ljh');
+INSERT INTO p_user(id,username,PASSWORD) VALUES(NULL,'lzr','lzr');
+INSERT INTO p_user(id,username,PASSWORD) VALUES(NULL,'anC','anC');
+CREATE TABLE p_user(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	username VARCHAR(20) NOT NULL UNIQUE,
+	`password` VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE `mode`(
+	id INT,
+	`mode` VARCHAR(10),
+	LRL DECIMAL(11,2),
+	URL DECIMAL(11,2),
+	AA DECIMAL(11,2),
+	VA DECIMAL(11,2),
+	APW DECIMAL(11,2),
+	VPW DECIMAL(11,2),
+	VRP DECIMAL(11,2),
+	ARP DECIMAL(11,2)
+);
